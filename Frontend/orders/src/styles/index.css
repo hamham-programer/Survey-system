@@ -1,0 +1,45 @@
+:root {
+  font-family: "Vazir", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+  margin: auto;
+  max-width: 1400px;
+  min-height: 100vh;
+  padding: 10px;
+ /*  background-image: linear-gradient(
+  to bottom, 
+  #093a1e 0%,   
+  #3b9a6f 40%,  
+  #a9a9a9 60%, 
+  #a9a9a9 40%,  
+  #f8b73e 80%,  
+  #e29a2c 100%  
+); */
+
+background-image: linear-gradient(
+  to bottom,
+  #6c6c6c 0%,
+  #6c6c6c 100%
+);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}

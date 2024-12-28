@@ -1,0 +1,154 @@
+.container {
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffcc00; 
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.input, .select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: #ffcc00;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ddb825;
+}
+
+.optionList {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  
+}
+
+.optionItem {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.questionList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.questionItem {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.questionItem:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.questionContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.questionText {
+  font-size: 1.7rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.questionType {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.questionOptions {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.questionOptions li {
+  margin-bottom: 5px;
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .input, .select {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .questionText {
+    font-size: 1.4rem;
+  }
+
+  .deleteButton {
+    font-size: 0.9rem;
+  }
+}

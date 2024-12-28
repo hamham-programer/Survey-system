@@ -1,0 +1,87 @@
+.form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    border: 1px solid #051937;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgb(0,39,255);
+    background: linear-gradient(90deg, rgb(4, 33, 196) 0%, rgba(3,22,31,0.989233193277311) 0%, rgb(4, 1, 61) 71%);
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(232, 236, 241);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1187f3;
+    margin: 5px auto 0;
+}
+
+.form p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1187f3;
+}
+
+.form label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #d3cfcf;
+}
+
+.form input, .form select {
+    width: 100%;
+    margin: 10px 0 20px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    background: rgb(70, 71, 71);
+    color: #fff;
+}
+
+.form input:focus, .form select:focus {
+    border-color: #182383;
+    outline: none;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgb(3,22,31);
+    background: linear-gradient(90deg, rgba(3,22,31,0.989233193277311) 0%, rgba(2,0,36,1) 0%, rgba(0,39,255,1) 59%);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    opacity: 0.9;
+}
+
+.form .error {
+    color: #d9534f;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+}

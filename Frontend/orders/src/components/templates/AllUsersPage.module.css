@@ -1,0 +1,196 @@
+.form {
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.form h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ffffff;
+    width: fit-content;
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchInput {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background: #eeecec; 
+    color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #aaa694;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.detailLink, .editLink {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    margin-left: 5px;
+}
+
+.detailLink {
+    background-color: #fac904;
+    color: #ffffff;
+    
+}
+
+.editLink {
+    background-color: #2a8008;
+    color: #ffffff;
+
+}
+
+.detailLink:hover {
+    background-color: #cfaa16;
+}
+
+.editLink:hover {
+    background-color: #1a5005;
+}
+/* تنظیمات ریسپانسیو */
+@media (max-width: 1024px) {
+    .searchInput {
+        width: 80%; /* افزایش عرض ورودی جستجو */
+        max-width: 300px; /* حداکثر عرض ورودی جستجو */
+    }
+
+    table {
+        font-size: 0.9rem; /* کاهش سایز متن جدول */
+        width: 100%; /* عرض جدول 100% */
+        overflow-x: auto; /* فعال کردن اسکرول افقی در صورت نیاز */
+    }
+
+    th, td {
+        padding: 10px; /* کاهش padding در سلول‌ها */
+        word-wrap: break-word; /* شکستن کلمات بلند */
+    }
+}
+
+@media (max-width: 768px) {
+    .searchInput {
+        width: 100%; /* عرض ورودی جستجو 100% */
+        max-width: none; /* حذف محدودیت حداکثر عرض */
+    }
+
+    table {
+        font-size: 0.85rem; /* کاهش سایز متن جدول */
+    }
+
+    th, td {
+        padding: 8px; /* کاهش padding در سلول‌ها */
+        word-wrap: break-word; /* شکستن کلمات بلند */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* کاهش سایز عنوان */
+    }
+}
+@media (max-width: 520px) {
+    .form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .searchInput {
+        width: 100%; /* عرض کامل برای جستجو */
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 0.8rem; /* کاهش سایز متن جدول */
+        overflow-x: auto; /* اسکرول افقی برای جدول */
+        display: block; /* نمایش جدول به‌صورت بلاک */
+        border: none;
+    }
+
+    thead {
+        display: none; /* مخفی کردن عنوان ستون‌ها */
+    }
+
+    tbody tr {
+        display: block; /* نمایش هر ردیف به‌صورت بلاک */
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding:50px;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 10px;
+        text-align: center;
+    }
+
+    tbody td:before {
+        content: attr(data-label); /* نمایش عنوان ستون در موبایل */
+        flex: 1;
+        font-weight: bold;
+        color: #4f60bb;
+        margin-right: 10px;
+        font-size: 0.85rem;
+    }
+
+    .detailLink, .editLink {
+        padding: 6px 8px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .detailLink {
+        display: inline-block; /* نمایش دکمه‌ها به‌صورت خطی */
+        margin-right: 5px;
+    }
+
+    .editLink {
+        display: inline-block;
+    }
+}

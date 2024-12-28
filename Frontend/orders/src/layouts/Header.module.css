@@ -1,0 +1,400 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 45px;
+    color:rgb(248, 244, 244);
+    
+    
+}
+
+.header div {
+    display: flex;
+}
+
+.links {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.links a:hover{
+   color: #f8b73e;
+  
+    
+}
+.branding p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ece9e9;
+    margin: 0 auto;
+    background-image: linear-gradient(#02112b, #010e25, #020e25, #021538 #011c4d);
+    border-radius: 20px;
+    padding: 20px;
+    border:1px solid rgb(211, 210, 210);
+    box-shadow: 1px 2px 2px rgb(211, 210, 210);
+  }
+
+.profileContainer {
+    position: relative;
+    margin-right: 30px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    color:rgb(248, 244, 244);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.profile:hover {
+   color: #f8b73e;
+}
+
+.profile img {
+    margin-right: 8px;
+    margin-left: 10px;
+    
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(243, 235, 235, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 150px;
+    
+}
+
+.dropdownMenu a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 3px 1px;
+    color: rgb(243, 239, 239);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.dropdownMenu a img{
+    display: flex;
+    text-align: center;
+    padding: 1px 3px;
+<<<<<<< HEAD
+    color: rgb(248, 240, 240);
+=======
+    color: gray;
+>>>>>>> 6e66e7e62361d68b85a92a198b6383443d420000
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdownMenu a:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.button {
+    background-color: #52515a;
+    color:rgb(209, 207, 207);
+    height: 40px;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.cartIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: gray;
+    text-decoration: none;
+}
+
+.cartIcon i {
+    font-size: 24px;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.cartIcon:hover i {
+    color: black;
+}
+/* ریسپانسیو برای صفحه‌های با عرض 768px تا 600px */
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .header {
+        margin-right: 10px;
+    }
+
+    .links {
+        gap: 10px; /* کاهش فاصله لینک‌ها */
+        font-size: 0.9rem;
+    }
+
+    .branding p {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .profileContainer {
+        margin-right: 15px;
+    }
+
+    .cartIcon {
+        margin-left: 10px;
+    }
+
+    .cartIcon i {
+        font-size: 20px;
+    }
+
+    .button {
+        display: none; /* مخفی کردن دکمه ثبت آگهی */
+    }
+
+    .dropdownMenu {
+<<<<<<< HEAD
+        width: 120px;
+    }
+
+    .dropdownMenu a {
+        font-size: 0.9rem;
+        padding: 8px 5px;
+=======
+        width: 120px; /* کاهش عرض منو برای دستگاه‌های کوچک‌تر */
+        right: 0; /* برای جلوگیری از خروج منو از صفحه */
+    }
+    
+    .dropdownMenu a {
+        font-size: 0.9rem; /* کاهش سایز فونت برای لینک‌ها */
+        padding: 8px 5px; /* کاهش فضای داخلی لینک‌ها */
+>>>>>>> 6e66e7e62361d68b85a92a198b6383443d420000
+    }
+}
+
+/* ریسپانسیو برای صفحه‌های با عرض 600px تا 414px */
+@media screen and (max-width: 600px) and (min-width: 414px) {
+    .header {
+        margin-right: 5px;
+    }
+
+    .links {
+        gap: 8px;
+        font-size: 0.8rem;
+    }
+
+    .branding p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .profileContainer {
+        margin-right: 5px;
+    }
+
+    .cartIcon {
+        margin-left: 5px;
+    }
+
+    .cartIcon i {
+        font-size: 18px;
+    }
+
+    .button {
+        display: none; /* مخفی کردن دکمه ثبت آگهی */
+    }
+<<<<<<< HEAD
+
+    .dropdownMenu {
+        width: 110px;
+    }
+
+    .dropdownMenu a {
+        font-size: 0.8rem;
+        padding: 6px 3px;
+    }
+}
+
+/* ریسپانسیو برای صفحه‌های با عرض 414px تا 375px */
+@media screen and (max-width: 414px) and (min-width: 375px) {
+    .header {
+        margin-right: 3px;
+    }
+
+    .links {
+        gap: 6px;
+        font-size: 0.75rem;
+    }
+
+    .branding p {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .profileContainer {
+        margin-right: 5px;
+    }
+
+    .cartIcon {
+        margin-left: 5px;
+    }
+
+    .cartIcon i {
+        font-size: 16px;
+    }
+
+    .button {
+        display: none; /* مخفی کردن دکمه ثبت آگهی */
+    }
+
+    .dropdownMenu {
+        width: 100px;
+    }
+
+    .dropdownMenu a {
+        font-size: 0.75rem;
+        padding: 5px 3px;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        color:rgb(248, 244, 244);
+        cursor: pointer;
+        transition: color 0.3s ease;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+/* ریسپانسیو برای صفحه‌های با عرض 375px تا 320px */
+@media screen and (max-width: 375px) and (min-width: 315px) {
+    .header {
+        margin-right: 0;
+    }
+
+    .links {
+        gap: 5px;
+        font-size: 0.7rem;
+    }
+
+    .branding p {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .profileContainer {
+        margin-right: 3px;
+    }
+
+    .cartIcon {
+        margin-left: 3px;
+    }
+
+    .cartIcon i {
+        font-size: 14px;
+    }
+
+    .button {
+        display: none; /* مخفی کردن دکمه ثبت آگهی */
+    }
+
+    .dropdownMenu {
+        width: 90px;
+    }
+
+    .dropdownMenu a {
+        font-size: 0.7rem;
+        padding: 4px 2px;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        color:rgb(248, 244, 244);
+        cursor: pointer;
+        transition: color 0.3s ease;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+}
+/* ریسپانسیو برای صفحه‌های با عرض 320px تا 280px */
+@media screen and (max-width: 315px) and (min-width: 220px) {
+    .header {
+        margin-right: 0;
+        padding: 5px; /* کاهش فاصله داخلی هدر */
+    }
+
+    .links {
+        gap: 3px; /* کاهش فاصله بین لینک‌ها */
+        font-size: 0.6rem; /* کاهش اندازه فونت لینک‌ها */
+    }
+
+    .branding p {
+        font-size: 10px; /* کاهش اندازه فونت متن برندینگ */
+        padding: 5px; /* کاهش فاصله داخلی */
+    }
+
+    .profileContainer {
+        margin-right: 2px; /* تنظیم فاصله مناسب برای پروفایل */
+    }
+
+    .cartIcon {
+        margin-left: 2px; /* تنظیم فاصله مناسب برای آیکون سبد خرید */
+    }
+
+    .cartIcon i {
+        font-size: 12px; /* کاهش اندازه آیکون سبد خرید */
+    }
+
+    .button {
+        display: none; /* همچنان دکمه ثبت آگهی مخفی بماند */
+    }
+
+    .dropdownMenu {
+        width: 60px; /* کاهش عرض منوی کشویی */
+    }
+
+    .dropdownMenu a {
+        font-size: 0.6rem; /* کاهش اندازه فونت لینک‌های منوی کشویی */
+        padding: 3px 1px; /* کاهش فاصله داخلی لینک‌ها */
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        color:rgb(248, 244, 244);
+        cursor: pointer;
+        transition: color 0.3s ease;
+        font-size: 0.7rem;
+        font-weight: bold;
+=======
+    .dropdownMenu {
+        width: 100px; /* کاهش بیشتر عرض منو */
+        right: 0; /* تنظیم مکان منو برای جلوگیری از خارج شدن از صفحه */
+    }
+
+    .dropdownMenu a {
+        font-size: 0.8rem; /* کوچک‌تر کردن بیشتر فونت لینک‌ها */
+        padding: 5px 3px; /* کاهش بیشتر فضای داخلی لینک‌ها */
+     
+>>>>>>> 6e66e7e62361d68b85a92a198b6383443d420000
+    }
+}

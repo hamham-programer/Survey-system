@@ -1,0 +1,71 @@
+/* استایل برای کانتینر کلی */
+.container {
+  padding: 20px;
+  background-color: #f8f9fa; /* رنگ پس‌زمینه روشن برای بهتر شدن ظاهر کانتینر */
+  border-radius: 8px; /* شعاع گوشه‌ها برای ظاهر نرم‌تر */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* سایه نرم برای برجسته‌تر شدن */
+}
+
+/* استایل برای هر کارت */
+.cartItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px;
+  margin-bottom: 10px; /* فاصله بین کارت‌ها */
+  border-radius: 8px; /* شعاع گوشه‌ها برای کارت‌ها */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* سایه نرم برای کارت‌ها */
+  background-color: var(--card-bg-color, #fff); /* رنگ پس‌زمینه کارت (با استفاده از متغیر CSS) */
+}
+
+/* استایل برای تصویر آیتم */
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px; /* شعاع گوشه‌ها به تصویر */
+  border: 1px solid #ddd; /* حاشیه خاکستری ملایم به تصویر */
+}
+
+/* استایل برای جزئیات آیتم */
+.itemDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* استایل برای عنوان آیتم */
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+/* استایل برای کمیت و مبلغ */
+.quantity,
+.amount {
+  margin: 5px 0;
+  color: #6c757d; /* رنگ متن برای هم‌خوانی با طراحی */
+}
+
+/* استایل برای دکمه پرداخت */
+.checkoutButton {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.checkoutButton:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.checkoutButton:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,96 @@
+.surveyAnalysisContainer {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.surveyTitle {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.participantsCount {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}
+
+.questionSection {
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questionText {
+  font-size: 20px;
+  color: #333;
+}
+
+.optionsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.optionItem {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.textQuestionsSection {
+  margin-top: 30px;
+}
+
+.textQuestion {
+  margin-bottom: 20px;
+}
+
+.textAnswer {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #c00;
+}
+
+.printButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.printButton:hover {
+  background-color: #45a049;
+}
+@media print {
+  @page {
+    margin: 0;
+  }
+  header, footer {
+    display: none !important;
+  }
+  .printButton {
+    display: none !important;
+  }
+}

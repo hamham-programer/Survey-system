@@ -1,0 +1,355 @@
+.container {
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.title {
+    text-align: center;
+    color: #fcf7f7;
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center; /* تراز عمودی عناصر */
+    width: 100%; /* عرض کامل */
+}
+
+.input {
+    flex: 1; /* فضای مساوی برای هر فیلد */
+    padding: 10px;
+    margin-right: 10px; /* فاصله بین فیلدها */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #28a745;
+}
+.searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffcc00;
+    background: #eeecec; 
+    color: #201e1e;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+.button {
+    padding: 10px ;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.unitList {
+    list-style-type: none;
+    padding: 0;
+    display: grid; /* استفاده از Grid Layout */
+    grid-template-columns: repeat(4, 1fr); /* سه ستون با عرض مساوی */
+    gap: 15px; /* فاصله بین واحدها */
+    width: 100%;
+    max-width: 1200px; /* حداکثر عرض */
+}
+
+.unitItem {
+    background: #efeff8; /* حفظ رنگ پس‌زمینه */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* استفاده از flex برای تراز کردن محتویات */
+    justify-content: space-between; /* فاصله بین محتویات و دکمه حذف */
+    align-items: center; /* تراز عمودی عناصر */
+}
+
+.unitItem:hover {
+    box-shadow: 0 8px 12px rgba(138, 136, 136, 0.2);
+    transform: translateY(-5px);
+}
+
+
+.unitDeleteButton {
+    background-color: #dc3545; /* رنگ قرمز برای دکمه حذف */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.unitDeleteButton:hover {
+    background-color: #c82333; /* رنگ تیره‌تر هنگام هاور */
+}
+.deleteButtonContainer {
+    display: flex;
+    justify-content: flex-end; /* دکمه حذف را به سمت چپ تراز می‌کند */
+}
+
+/* استایل اصلی */
+.container {
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    color: #fcf7f7;
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #28a745;
+}
+
+.button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.unitList {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.unitItem {
+    background: #efeff8;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unitItem:hover {
+    box-shadow: 0 8px 12px rgba(138, 136, 136, 0.2);
+    transform: translateY(-5px);
+}
+
+.unitDeleteButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.unitDeleteButton:hover {
+    background-color: #c82333;
+}
+
+.deleteButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* مدیا کوئری‌ها */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .unitList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .unitList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .input, .button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 414px) {
+    .container {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .unitList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .inputGroup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .button {
+        width: 100%;
+        padding: 10px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 414px) and (min-width: 375px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .unitList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .inputGroup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .button {
+        width: 100%;
+        margin-right: 0;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width: 315px) {
+    .container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+    .unitList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .input, .button {
+        font-size: 0.8rem;
+    }
+    .inputGroup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .button {
+        width: 100%;
+        padding: 10px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 315px) and (min-width: 220px) {
+    .title {
+        font-size: 1.1rem;
+    }
+    .unitList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .button {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+    .inputGroup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .button {
+        width: 100%;
+        padding: 10px;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,292 @@
+/* SurveyPage.module.css */
+.container {
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffcc00;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 415px;
+  text-align: center;
+}
+.inputd{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 115px;
+  text-align: right;
+  color: gray;
+}
+.inputd option[disabled] {
+  text-align: left;
+  color: gray; 
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.surveyList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.surveyItem {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.surveyItem:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.surveyTitle {
+  font-size: 1.7rem;
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.surveyDescription {
+  font-size: 1.1rem;
+  color: #666;
+  margin-left: auto; /* فاصله از دکمه‌ها */
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  margin: 0;
+  color: #2863a7;
+}
+
+.link:hover {
+  color: #043d7e;
+}
+
+/* چیدمان عنوان و توضیحات و ایجاد نظرسنجی در یک راستا */
+.surveyItemContent {
+  display: flex;
+  justify-content: space-between; /* فاصله بین عنوان و توضیحات */
+  flex-grow: 1; /* اجازه می‌دهد تا محتوای دیگر در صورت نیاز گسترش یابد */
+  align-items: center; /* تراز کردن محتوا در مرکز */
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+/* تنظیمات ریسپانسیو */
+@media (max-width: 1024px) {
+  
+
+  .surveyTitle {
+    font-size: 1.5rem;
+  }
+
+  .surveyDescription {
+    font-size: 1rem;
+  }
+
+  .button,
+  .deleteButton {
+    font-size: 0.9rem;
+  }
+
+  .form {
+    flex-direction: column; /* تغییر چیدمان به صورت عمودی در سایزهای کوچک */
+    align-items: center; /* برای وسط‌چین کردن */
+  }
+
+  .surveyItemContent {
+    flex-direction: column; /* در سایزهای کوچکتر، چیدمان به صورت عمودی */
+  }
+}
+
+@media (max-width: 780px) { /* تنظیمات برای سایز کمتر از 780px */
+  .form {
+    flex-direction: row; /* چیدمان ورودی‌ها در یک راستا */
+    justify-content: space-between; /* فاصله بین ورودی‌ها */
+    width: 100%; /* عرض فرم 100% */
+  }
+
+  .input,.button {
+    width: 48%; /* عرض ورودی‌ها کمتر از 50% برای جای کافی */
+  }
+
+  .button, .deleteButton {
+    width: 100%; /* عرض دکمه‌ها 100% */
+    font-size: 0.8rem; /* سایز فونت دکمه‌ها */
+  }
+}
+
+@media (min-width: 769px) { /* تنظیمات برای سایزهای بزرگتر از 768px */
+  .form {
+    flex-direction: row; /* چیدمان ورودی‌ها در یک راستا */
+    justify-content: space-between; /* فاصله بین ورودی‌ها */
+    width: 100%; /* عرض فرم 100% */
+  }
+
+  .input {
+    width: 48%; /* عرض ورودی‌ها کمتر از 50% برای جای کافی */
+  }
+
+  .button,
+  .deleteButton {
+    width: auto; /* دکمه‌ها به صورت خودکار تنظیم شوند */
+    font-size: 0.9rem; /* سایز فونت دکمه‌ها */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 20px;
+  }
+
+  .input {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 100%; /* عرض ورودی‌ها 100% */
+  }
+
+  .button,
+  .deleteButton {
+    padding: 8px;
+    font-size: 0.75rem;
+  }
+
+  .surveyTitle {
+    font-size: 1.2rem;
+  }
+
+  .surveyDescription {
+    font-size: 0.8rem;
+  }
+
+  .surveyItem {
+    padding: 15px;
+  }
+
+  .form {
+    flex-direction: column; /* تغییر چیدمان به صورت عمودی در سایز 480 */
+  }
+
+  .button {
+    margin-top: 10px; /* فاصله از ورودی‌ها */
+  }
+}
+
+/* چیدمان عنوان و توضیحات */
+.surveyItem {
+  flex-direction: column; /* در صورتی که فضا کافی نیست، چیدمان به صورت عمودی */
+}
+
+@media (min-width: 768px) {
+  .surveyItem {
+    flex-direction: row; /* در سایزهای بزرگ‌تر، چیدمان به صورت افقی */
+  }
+}
+.unitsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.unitOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.icon, .iconSelected {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.iconSelected {
+  color: green;
+}
+
+.icon {
+  color: grey;
+}
+.select {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* استایل برای گزینه‌های انتخاب شده */
+.react-select__multi-value {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+}
+
+.react-select__multi-value__label {
+  color: white;
+}
+
+.react-select__multi-value__remove {
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,290 @@
+.container {
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    color: #fcf7f7;
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    color: #e0dada;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight:300;
+
+}
+
+.mainSection {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 1200px; 
+}
+
+.driverSection, .routeSection, .returnRouteSection {
+    width: 35%; 
+    margin-bottom: 30px;
+}
+
+
+.form {
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 10px;
+    width: 330px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #28a745;
+}
+
+.button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.driverList, .routeList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.driverItem, .routeItem {
+    background: #efeff8; /* حفظ رنگ پس‌زمینه */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* استفاده از flex برای تراز کردن محتویات */
+    justify-content: space-between; /* فاصله بین محتویات و دکمه حذف */
+    align-items: center; /* تراز عمودی عناصر */;
+    margin-bottom: 2px;
+    width: 390px;
+}
+
+.deleteButton {
+    background-color: #dc3545; /* رنگ قرمز برای دکمه حذف */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.deleteButton:hover {
+    background-color: #c82333;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    /* تغییرات برای عناصر مختلف صفحه */
+    .container {
+        padding: 17px;
+        min-height: auto;
+    }
+
+    .title {
+        font-size: 2.5rem; /* اندازه عنوان را کوچک‌تر می‌کنیم */
+        margin-bottom: 20px;
+    }
+
+    .mainSection {
+        flex-direction: column; /* تنظیم برای چیدمان عمودی */
+        align-items: center; /* تراز کردن محتوای مرکزی */
+    }
+
+    .driverSection, .routeSection, .returnRouteSection {
+        width: 100%; /* عرض هر بخش را 100% می‌کنیم */
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%; /* عرض فیلد ورودی را 100% می‌کنیم */
+    }
+
+    .button {
+        width: 100%; /* دکمه‌ها را 100% عرض می‌کنیم */
+        margin-top: 10px;
+ 
+    }
+
+    .driverList, .routeList {
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .driverItem, .routeItem {
+        width: 100%; /* عرض آیتم‌ها را به 100% تغییر می‌دهیم */
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .deleteButton {
+        padding: 8px 15px; /* اندازه دکمه حذف را کمی تغییر می‌دهیم */
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .mainSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .driverSection, .routeSection, .returnRouteSection {
+        width: 100%;
+    }
+    .title {
+        font-size: 35px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .driverItem, .routeItem {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 414px) {
+    .mainSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .driverSection, .routeSection, .returnRouteSection {
+        width: 100%;
+    }
+    .title {
+        font-size: 30px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .driverItem, .routeItem {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) and (min-width: 375px) {
+    .mainSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .driverSection, .routeSection, .returnRouteSection {
+        width: 100%;
+    }
+    .title {
+        font-size: 30px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .driverItem, .routeItem {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width: 315px) {
+    .mainSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .driverSection, .routeSection, .returnRouteSection {
+        width: 100%;
+    }
+    .title {
+        font-size: 25px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .driverItem, .routeItem {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 315px) and (min-width: 220px) {
+    .mainSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        font-size: 20px;
+    }
+
+    .driverSection, .routeSection, .returnRouteSection {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .driverItem, .routeItem {
+        width: 100%;
+    }
+}

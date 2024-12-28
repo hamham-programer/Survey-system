@@ -1,0 +1,224 @@
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* قرار دادن محتوا در وسط */
+    margin-bottom: 10px;
+    margin-top: 50px;
+    
+  }
+  
+  .phoneInput {
+    width: 300px; /* عرض فیلد ورودی شماره تلفن */
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .phoneInput:focus {
+    border-color: #28a745;
+  }
+  
+  .addButton {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #218838;
+  }
+  
+  .separator {
+    border: none;
+    border-top: 1px solid #ddd; 
+    margin: 10px 0; 
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background: #eeecec; 
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .numberList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* قرار دادن شماره‌ها در وسط */
+    gap: 10px;
+  }
+  
+  .numberItem {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 5px; /* فضای داخلی برای راحتی */
+    border: 1px solid #ddd; /* خط دور شماره */
+    border-radius: 5px; /* گرد کردن گوشه‌ها */
+    background-color: #f9f9f9; /* رنگ پس‌زمینه */
+  }
+  
+  .deleteButton {
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c82333;
+  }
+  /* Responsive Styles */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .inputContainer {
+    margin-top: 70px;
+    
+  }
+  .phoneInput, .searchInput {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .addButton {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .numberList {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .inputContainer {
+    margin-top: 70px;
+    
+  }
+  .phoneInput, .searchInput {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .addButton {
+    padding: 7px;
+    font-size: 0.9rem;
+  }
+
+  .numberItem {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 414px) {
+  .inputContainer {
+    margin-top: 70px;
+    
+  }
+  .phoneInput, .searchInput {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .addButton {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+
+  .numberItem {
+    font-size: 0.8rem;
+  }
+
+  .deleteButton {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 414px) and (min-width: 375px) {
+  .inputContainer {
+    margin-top: 60px;
+    
+  }
+  .phoneInput, .searchInput {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .addButton {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  .numberItem {
+    font-size: 0.75rem;
+  }
+
+  .deleteButton {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 315px) {
+  .inputContainer {
+    margin-top: 60px;
+    
+  }
+  .phoneInput, .searchInput {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .addButton {
+    padding: 5px;
+    font-size: 0.75rem;
+  }
+
+  .numberItem {
+    font-size: 0.7rem;
+  }
+
+  .deleteButton {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 315px) and (min-width: 220px) {
+  .inputContainer {
+    margin-top: 60px;
+    
+  }
+  .phoneInput, .searchInput {
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 4px;
+  }
+
+  .addButton {
+    padding: 4px;
+    font-size: 0.7rem;
+  }
+
+  .numberItem {
+    font-size: 0.65rem;
+  }
+
+  .deleteButton {
+    font-size: 0.65rem;
+  }
+}

@@ -1,0 +1,110 @@
+.footer {
+    color: #fff; 
+    padding: 20px;
+    border-top: 1px solid #fff
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerColumns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .footerAbout, .footerLinks {
+    width: 40%;
+  }
+  
+  .footerAbout h3, .footerLinks h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+  
+  .footerAbout p {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+
+  }
+  .footerLinks{
+    text-align: center;
+  }
+  
+  .footerLinks ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .footerLinks li {
+    margin: 5px 0;
+  }
+  
+  .footerLinks a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footerLinks a:hover {
+    color: #f8b73e;
+  }
+  
+  .footerBottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+/* ریسپانسیو برای صفحه‌نمایش‌های کوچک‌تر */
+@media screen and (max-width: 768px) {
+  .footerAbout h3{
+    text-align: center;
+}
+.footerAbout p {
+  text-align: center;
+}
+  .footerColumns {
+      flex-direction: column; /* ستون‌ها به صورت عمودی قرار می‌گیرند */
+      align-items: center;
+  }
+
+  .footerAbout, .footerLinks {
+      width: 90%; /* عرض ستون‌ها کاهش می‌یابد */
+      margin-bottom: 20px; /* فاصله بین ستون‌ها در حالت عمودی */
+  }
+  .footerLinks{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footerAbout p {
+      font-size: 13px; /* کاهش سایز متن در سایزهای کوچکتر */
+      text-align: center;
+  }
+  .footerAbout h3{
+    text-align: center;
+}
+
+  .footerLinks {
+      font-size: 14px; /* کاهش سایز متن لینک‌ها */
+  }
+
+  .footerLinks ul {
+      padding: 0;
+      text-align: center;
+  }
+
+  .footerBottom {
+      font-size: 14px; /* کاهش سایز فونت بخش پایین فوتر */
+  }
+}

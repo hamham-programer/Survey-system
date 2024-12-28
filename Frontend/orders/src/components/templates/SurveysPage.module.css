@@ -1,0 +1,145 @@
+.container {
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  color: #fcf7f7;
+  font-size: 3rem; 
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.surveyList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px; 
+}
+
+.surveyItem {
+  text-align: center;
+  background: #efeff8;
+  border: 1px solid #ddd;
+  border-radius: 12px; 
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.surveyItem:hover {
+  box-shadow: 0 8px 12px rgba(138, 136, 136, 0.2); /* سایه بیشتر هنگام هاور */
+  transform: translateY(-5px); /* ایجاد حرکت بالا هنگام هاور */
+}
+
+.surveyTitle {
+  font-size: 1.7rem; 
+  color: #28a745; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.surveyTitle:hover {
+  text-decoration: underline;
+  color: #218838; 
+}
+
+.surveyDescription {
+  color: #ee6c16;
+  margin-top: 10px;
+  font-size: 1.1rem; 
+  line-height: 1.5; 
+}
+
+.surveyDescription::before {
+  content: "📝 "; 
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .surveyItem {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .surveyTitle {
+    font-size: 1.5rem;
+  }
+
+  .surveyDescription {
+    font-size: 1rem;
+  }
+}
+/* برای صفحه‌نمایش‌های کوچک‌تر از 768px */
+@media (max-width: 768px) {
+  .surveyItem {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 2rem; /* کاهش سایز عنوان */
+  }
+
+  .surveyTitle {
+    font-size: 1.5rem; /* کاهش سایز عنوان نظرسنجی */
+  }
+
+  .surveyDescription {
+    font-size: 1rem; /* کاهش سایز توضیحات نظرسنجی */
+  }
+}
+
+/* برای صفحه‌نمایش‌های کوچک‌تر از 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.5rem; /* کاهش بیشتر سایز عنوان */
+  }
+
+  .surveyTitle {
+    font-size: 1.2rem; /* کاهش بیشتر سایز عنوان نظرسنجی */
+  }
+
+  .surveyDescription {
+    font-size: 0.9rem; /* کاهش بیشتر سایز توضیحات نظرسنجی */
+  }
+
+  .surveyItem {
+    padding: 10px;
+    margin-bottom: 15px; /* کاهش فاصله بین آیتم‌ها */
+  }
+}
+
+/* برای صفحه‌نمایش‌های کوچک‌تر از 360px */
+@media (max-width: 360px) {
+  .title {
+    font-size: 1.2rem; /* کاهش سایز عنوان به حداقل */
+  }
+
+  .surveyTitle {
+    font-size: 1rem; /* کاهش سایز عنوان نظرسنجی به حداقل */
+  }
+
+  .surveyDescription {
+    font-size: 0.8rem; 
+  }
+
+  .surveyItem {
+    padding: 8px;
+    margin-bottom: 10px; 
+  }
+}

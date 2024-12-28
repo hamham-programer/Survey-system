@@ -1,0 +1,701 @@
+.homePage {
+  text-align: center;
+  margin-top: 140px;
+  position: relative; /* برای استفاده از position: absolute در تصاویر */
+}
+
+.heading {
+  font-size: 2.7rem; 
+  font-weight: bold; 
+  color: #ffffff; 
+  margin-bottom: 10px; 
+}
+
+.subheading {
+  font-size: 1.25rem; 
+  color: #ffcc00
+}
+
+.buttonContainer {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  justify-content: center; 
+  margin-top: 100px;
+  margin-bottom: 170px;
+}
+
+.buttonLink {
+  text-decoration: none;
+}
+
+.button {
+  font-weight: 800; 
+  background-image: linear-gradient(to right, #e44d26, #ffca28); /* گرادیانت نارنجی */
+  color: #fff; 
+  border: none;
+  padding: 15px 30px; 
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 26px; 
+  line-height: 1.75rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-blue {
+  background-image: linear-gradient(to right, #007aff, #00c6ff); /* گرادیانت آبی */
+}
+
+.button:hover {
+  border: 5px solid #f8b73e; /* رنگ حاشیه هاور */
+  opacity: 0.9; 
+}
+
+.leftImage, .rightImage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px; 
+  height: auto; 
+  object-fit: cover;
+  animation: slideIn 3s ease-in-out infinite alternate; /* انیمیشن آرام */
+}
+
+.leftImage {
+  left: 0;
+  position: absolute;
+  top: 20%;
+ 
+}
+
+.rightImage {
+  right: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10%) translateX(-10px); /* شروع انیمیشن */
+  }
+  to {
+    transform: translateY(-10%) translateX(5px); /* پایان انیمیشن */
+  }
+}
+
+.swiper {
+  width: 100%;
+  max-width: fit-content;
+  margin: 110px auto 20px;
+}
+
+.swiper img {
+  width: 120px;
+  background-color: #ddd8cf;
+  height: 100px; 
+  max-width: 150px;
+  max-height: 100px;
+  object-fit:contain; 
+  border-radius: 50%;
+  border: 3px solid #fff; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  display: block;
+}
+
+.contactSection {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding:50px
+}
+
+.contactTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.socialIconInstagram,
+.socialIconLinkedin,
+.socialIconWhatsapp,
+.socialIconTelegram,
+.socialIconComment,
+.socialIconEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 40x rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+.socialIconInstagram{
+  background: #e4647c; 
+  color: #fff;
+}
+.socialIconLinkedin{
+  color: #fff;
+  background-color:#4487ac; 
+}
+.socialIconWhatsapp{
+  background: #58d686; 
+  color: #fff;
+}
+.socialIconTelegram{
+  background: #3198cc; 
+  color: #fff;
+}
+.socialIconComment{
+  background: #3faf43; 
+  color: #fff;
+}
+.socialIconEmail{
+  background: #f5aa33; 
+  color: #fff;
+}
+
+
+.socialIconInstagram:hover {
+  background: #e4405f; 
+  color: #fff;
+}
+
+.socialIconLinkedin:hover {
+  background: #0077b5; 
+  color: #fff;
+}
+
+.socialIconWhatsapp:hover {
+  background: #25d366; 
+  color: #fff;
+}
+
+.socialIconTelegram:hover {
+  background: #0088cc; 
+  color: #fff;
+}
+
+.socialIconComment:hover {
+  background: #01b107; 
+  color: #fff;
+}
+
+.socialIconEmail:hover {
+  background: #f39c12; 
+  color: #fff;
+}
+
+.socialLinks i {
+  font-size: 2.45rem;
+  color: inherit;
+}
+/* ریسپانسیو برای صفحه‌نمایش‌های کوچک‌تر */
+@media screen and (max-width: 1044px) {
+  .heading {
+    font-size: 2rem; /* کاهش سایز عنوان */
+  }
+
+  .subheading {
+    font-size: 1rem; /* کاهش سایز زیرعنوان */
+  }
+
+  .button {
+    font-size: 18px; /* کاهش سایز دکمه‌ها */
+    padding: 8px 16px; /* کاهش padding دکمه‌ها */
+  }
+
+  .leftImage,
+  .rightImage {
+    width: 200px; /* کاهش عرض تصاویر */
+    height: auto;
+  }
+
+  .swiper {
+    margin: 20px auto; /* کاهش فاصله بالای swiper */
+  }
+
+  .contactSection {
+    padding: 30px; /* کاهش padding در بخش تماس */
+    text-align: center; /* وسط‌چین کردن متن تماس */
+  }
+
+  .contactTitle {
+    font-size: 1.2rem; /* کاهش سایز عنوان تماس */
+  }
+
+  .socialIconInstagram,
+  .socialIconLinkedin,
+  .socialIconWhatsapp,
+  .socialIconTelegram,
+  .socialIconComment,
+  .socialIconEmail {
+    width: 3rem; /* کاهش اندازه آیکون */
+    height: 3rem; /* کاهش اندازه آیکون */
+    box-shadow: none; /* حذف هاله */
+    margin: 4px; /* فاصله بین آیکون‌ها */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .subheading {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+ 
+}
+/* 
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .subheading {
+    font-size: 0.85rem;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .contactTitle {
+    font-size: 1rem;
+  }
+
+  .leftImage,
+  .rightImage {
+    width: 150px;
+    height: auto;
+  }
+
+  .swiper img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 414px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .subheading {
+    font-size: 0.85rem;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .contactTitle {
+    font-size: 1rem;
+  }
+
+  .leftImage,
+  .rightImage {
+    width: 150px;
+    height: auto;
+  }
+
+  .swiper img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+@media screen and (max-width: 414px) and (min-width: 375px) {
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .subheading {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .contactTitle {
+    font-size: 1rem;
+  }
+
+  .leftImage,
+  .rightImage {
+    width: 120px;
+  }
+
+  .swiper img {
+    width: 60px;
+    height: 60px;
+  }
+  .leftImage {
+    display: none;
+  }
+
+  .rightImage {
+    display: block;
+    margin-right:75px; 
+    width: 50%; 
+    animation: slideIn 3s ease-in-out infinite alternate; 
+
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-18px); 
+    }
+    to {
+      transform: translateX(10px); 
+    }
+  }
+
+}
+
+
+
+@media screen and (max-width: 375px) and (min-width: 320px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .subheading {
+    font-size: 0.75rem;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 6px 9px;
+  }
+
+  .contactTitle {
+    font-size: 1rem;
+  }
+
+  .rightImage {
+    width: 100px;
+  }
+  .leftImage {
+    display: none;
+  }
+
+
+  .rightImage {
+    display: block;
+    margin-right:75px; 
+    width: 50%; 
+    animation: slideIn 3s ease-in-out infinite alternate; 
+
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-18px); 
+    }
+    to {
+      transform: translateX(10px); 
+    }
+  }
+
+  .swiper img {
+    width: 50px;
+    height: 50px;
+  }
+} */
+
+/* ریسپانسیو برای صفحه‌های با عرض 768px تا 600px */
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .homePage {
+    margin-top: 100px;
+  }
+
+  .heading {
+    font-size: 2rem; /* کاهش اندازه فونت عنوان اصلی */
+  }
+
+  .subheading {
+    font-size: 1rem; /* کاهش اندازه زیرعنوان */
+  }
+
+  .button {
+    font-size: 1.3rem;
+    padding: 14px 20px; /* کاهش فضای داخلی دکمه‌ها */
+  }
+
+  .leftImage, .rightImage {
+    width: 200px; /* کاهش سایز تصاویر */
+  }
+
+  .contactSection {
+    padding: 30px; /* کاهش فاصله داخلی بخش تماس */
+  }
+  .swiper img {
+    width: 85px;
+    height: 70px;
+  }
+
+  .socialLinks {
+    gap: 1.5rem; /* کاهش فاصله بین آیکون‌ها */
+  }
+}
+
+/* ریسپانسیو برای صفحه‌های با عرض 600px تا 414px */
+@media screen and (max-width: 600px) and (min-width: 414px) {
+  .homePage {
+    margin-top: 80px;
+  }
+
+  .heading {
+    font-size: 1.7rem; /* کاهش بیشتر اندازه فونت عنوان اصلی */
+  }
+
+  .subheading {
+    font-size: 1rem; /* کاهش بیشتر اندازه زیرعنوان */
+  }
+
+  .button {
+    font-size: 1.3rem;
+    padding: 11px 15px;
+  }
+
+  .leftImage, .rightImage {
+    width: 150px; /* کاهش بیشتر سایز تصاویر */
+  }
+  .leftImage {
+    display: none;
+  }
+
+  .rightImage {
+    display: block;
+    margin-right:145px; 
+    width: 34%; 
+
+  }
+
+
+  .contactSection {
+    padding: 20px;
+  }
+  .swiper img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .socialLinks {
+    gap: 1rem;
+  }
+
+  .socialIconInstagram,
+  .socialIconLinkedin,
+  .socialIconWhatsapp,
+  .socialIconTelegram,
+  .socialIconComment,
+  .socialIconEmail {
+    width: 2.5rem;
+    height: 2.5rem; /* کاهش اندازه آیکون‌ها */
+  }
+
+  .socialLinks i {
+    font-size: 1.8rem;
+  }
+}
+
+/* ریسپانسیو برای صفحه‌های با عرض 414px تا 375px */
+@media screen and (max-width: 414px) and (min-width: 375px) {
+  .homePage {
+    margin-top: 80px;
+  }
+
+  .heading {
+    font-size: 1.7rem; /* کاهش بیشتر اندازه فونت عنوان اصلی */
+  }
+
+  .subheading {
+    font-size: 1rem; /* کاهش بیشتر اندازه زیرعنوان */
+  }
+
+  .button {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+  }
+
+  .leftImage, .rightImage {
+    width: 150px; /* کاهش بیشتر سایز تصاویر */
+  }
+  .leftImage {
+    display: none;
+  }
+
+  .rightImage {
+    display: block;
+    margin-right:125px; 
+    width: 34%; 
+
+  }
+
+  .contactSection {
+    padding: 20px;
+  }
+  .swiper img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .socialLinks {
+    gap: 1rem;
+  }
+
+  .socialIconInstagram,
+  .socialIconLinkedin,
+  .socialIconWhatsapp,
+  .socialIconTelegram,
+  .socialIconComment,
+  .socialIconEmail {
+    width: 3.8rem;
+    height: 2.2rem;
+  }
+
+  .socialLinks i {
+    font-size: 1.6rem;
+  }
+}
+/* ریسپانسیو برای صفحه‌های با عرض 375px تا 320px */
+@media screen and (max-width: 375px) and (min-width: 315px) {
+  .homePage {
+    margin-top: 44px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .subheading {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 6px 11px;
+  }
+  .leftImage {
+    display: none;
+  }
+
+  .rightImage {
+    display: block;
+    margin-right:105px; 
+    width: 34%; 
+
+  }
+
+  .contactSection {
+    padding: 10px;
+  }
+  .swiper img {
+    width: 50px;
+    height: 50px;
+  }  
+
+  .socialLinks {
+    gap: 0.5rem;
+  }
+
+  .socialIconInstagram,
+  .socialIconLinkedin,
+  .socialIconWhatsapp,
+  .socialIconTelegram,
+  .socialIconComment,
+  .socialIconEmail {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .socialLinks i {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 315px) and (min-width: 220px) {
+  .homePage {
+    margin-top: 40px; /* کاهش بیشتر فاصله بالا */
+  }
+
+  .heading {
+    font-size: 1.1rem; /* کاهش اندازه عنوان */
+  }
+
+  .subheading {
+    font-size: 0.7rem; /* کاهش بیشتر زیرعنوان */
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 5px 9px; /* کاهش فاصله داخلی دکمه‌ها */
+  }
+
+  .leftImage, .rightImage {
+    width: 100px; /* کوچک‌تر کردن تصاویر */
+  }
+  .leftImage {
+    display: none;
+  }
+
+  .rightImage {
+    display: block;
+    margin-right:95px; 
+    width: 34%; 
+
+  }
+
+  .contactSection {
+    padding: 8px; /* کاهش فاصله داخلی بخش تماس */
+  }
+
+  .swiper img {
+    width: 40px;
+    height: 40px; /* کاهش اندازه تصاویر اسلایدر */
+  }
+
+  .socialLinks {
+    gap: 0.3rem; /* کاهش فاصله بین آیکون‌ها */
+  }
+
+  .socialIconInstagram,
+  .socialIconLinkedin,
+  .socialIconWhatsapp,
+  .socialIconTelegram,
+  .socialIconComment,
+  .socialIconEmail {
+    width: 2rem; /* کوچک‌تر کردن آیکون‌ها */
+    height: 2rem;
+  }
+
+  .socialLinks i {
+    font-size: 1.5rem; /* کاهش اندازه فونت آیکون‌ها */
+  }
+}
